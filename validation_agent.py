@@ -488,9 +488,19 @@ class ValidationAgent:
                 # Assuming 'Processed Policy Number' is the column name
                 policy_num = row.get('Processed Policy Number', row.get('Policy Number', ''))
                 
-                print(f"  🔍 Validating Policy: {policy_num} in folder '{sheet_name}'")
+                # Fix pandas .0 float formatting bug
+                if pd.notna(policy_num):
+                    policy_num_str = str(policy_num).strip()
+                    if policy_num_str.endswith('.0'):
+                        policy_num_str = policy_num_str[:-2]
+                    policy_num = policy_num_str
+                
+                carrier_val = row.get('Carrier')
+                actual_carrier = carrier_val if pd.notna(carrier_val) else sheet_name
+                
+                print(f"  🔍 Validating Policy: {policy_num} for carrier '{actual_carrier}'")
                 if self.drive_service:
-                    drive_match, drive_reason = self.validate_in_drive(policy_num, sheet_name)
+                    drive_match, drive_reason = self.validate_in_drive(policy_num, actual_carrier)
                 else:
                     drive_match, drive_reason = "No Match", "Google Drive API not authenticated"
                 
