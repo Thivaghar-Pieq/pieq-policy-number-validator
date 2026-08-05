@@ -1,0 +1,2437 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40"
+ xmlns:u1="urn:schemas- microsoft-com:office:excel">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <LastAuthor>Loula Irene Cabel</LastAuthor>
+  <Created>2024-11-14T13:38:29Z</Created>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <SupBook>
+   <Path>/Library/Application Support/Microsoft/Office365/User Content.localized/Startup/Excel/AcrobatExcelAddin.xlam</Path>
+   <SheetName>Sheet1</SheetName>
+   <Xct>
+    <Count>0</Count>
+    <SheetIndex>0</SheetIndex>
+   </Xct>
+  </SupBook>
+  <WindowHeight>16440</WindowHeight>
+  <WindowWidth>27240</WindowWidth>
+  <WindowTopX>5980</WindowTopX>
+  <WindowTopY>2800</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s63">
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s64">
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s66">
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="CommissionData_1">
+  <Table ss:ExpandedColumnCount="42" ss:ExpandedRowCount="53" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="13">
+   <Column ss:Width="49"/>
+   <Column ss:Width="66"/>
+   <Column ss:Width="130"/>
+   <Column ss:Width="49"/>
+   <Column ss:Width="150"/>
+   <Column ss:Width="70"/>
+   <Column ss:Width="66"/>
+   <Column ss:Width="55"/>
+   <Column ss:Width="50" ss:Span="1"/>
+   <Column ss:Index="11" ss:Width="55"/>
+   <Column ss:Width="61"/>
+   <Column ss:Width="60" ss:Span="1"/>
+   <Column ss:Index="15" ss:Width="55" ss:Span="1"/>
+   <Column ss:Index="17" ss:Width="31"/>
+   <Column ss:Width="81"/>
+   <Column ss:Width="80" ss:Span="1"/>
+   <Column ss:Index="21" ss:Width="60"/>
+   <Column ss:Width="73"/>
+   <Column ss:Width="51"/>
+   <Column ss:Width="66"/>
+   <Column ss:Width="81"/>
+   <Column ss:Width="73"/>
+   <Column ss:Width="161"/>
+   <Column ss:Width="60"/>
+   <Column ss:Width="66"/>
+   <Column ss:Width="57"/>
+   <Column ss:Width="51"/>
+   <Column ss:Width="73"/>
+   <Column ss:Width="70"/>
+   <Column ss:Width="150"/>
+   <Column ss:Width="70"/>
+   <Column ss:Width="85"/>
+   <Column ss:Width="84"/>
+   <Column ss:Width="83"/>
+   <Column ss:Width="60"/>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">AorSan</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">CommRunDt</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">WaName</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">WaSan</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">GrpName</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">GrpNbr</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">PID</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">UMID</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ApplId</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">BlkBusCd</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">PltfrmCd</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">TxnDueDt</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MonthPaid</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">PaidToDate</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">FrstYrRnwl</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">LiveType</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">LiveCount</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Line</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Product</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ProdCode</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ExchangeInd</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">CommRate</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">TotalPremium</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">SplitPct</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">PaidAmount</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">EarnoffAmount</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">AdvOrCbkPrm</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Comment</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MiscDesc</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MiscAmount</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">TxnTypeCd</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">EffDate</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">AorAgentId</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">WaAgentId</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">AcctName</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">AcctNumber</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">MemberNumber</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">PolicyName</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">PolicyNumber</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Contract</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ReplInd</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">PriorPolNbr</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">HORN JEFFREY E</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1267028</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DRUCKER DONNA L</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00022413863K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">915328352</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">3DH8XX5VR20</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-12-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DEC</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">F</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MER</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0.08</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">FIRST YEAR COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCF</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-12-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H1468</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TEIPEL GREGORY K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509770</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">FORD SHARON M</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00016089212K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">972897533</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MER</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-12-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H4461</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TEIPEL GREGORY K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509770</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MCDANIEL RICKEY</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020297143K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">651986404</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-05-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5216</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TEIPEL GREGORY K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509770</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LOPEZ LINDA S</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020306158K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">333289113</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-05-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5216</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TEIPEL GREGORY K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509770</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LOPEZ TOMAS V</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020306395K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">423890113</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-05-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5216</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TEIPEL GREGORY K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509770</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CADENA PEDRO</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020321865K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">960988174</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-05-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5216</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TEIPEL GREGORY K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509770</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MCMULLIN JUANA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020347756K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">53110473</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-06-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5216</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TEIPEL GREGORY K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509770</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TODARO MICHAEL J</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020366504K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">463442230</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-05-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5525</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TEIPEL GREGORY K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509770</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">KINKAID JEFFREY N</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020366906K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">600555073</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MRO</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-07-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H0028</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TEIPEL GREGORY K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509770</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">HAUFF DEBRA D</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020373510K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">178779284</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MER</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-06-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H2463</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TEIPEL GREGORY K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509770</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TREW ROBIN L</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020397039K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">365808403</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-06-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5216</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TEIPEL GREGORY K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509770</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">JOHNSON CALVIN</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020414954K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">666505423</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-06-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5216</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TEIPEL GREGORY K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509770</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">URRUTIA CHERYL</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020436912K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">586864034</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MER</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-06-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H0028</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TEIPEL GREGORY K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509770</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MORAN LINDA G</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020444350K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">260541025</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MER</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-07-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5619</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TEIPEL GREGORY K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509770</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ROBERTS SHERRI S</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020447853K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">33706453</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MER</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-08-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H0028</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TEIPEL GREGORY K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509770</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">OLSEN SHARON A</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020478015K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">649416112</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-08-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5216</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TEIPEL GREGORY K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509770</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SHULTZ ERIC W</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020575930K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">401766183</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-08-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5216</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TEIPEL GREGORY K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509770</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DELURY ANNIE Y</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020667928K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">401017244</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5216</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TEIPEL GREGORY K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509770</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">HEIL KATHERINE J</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020683226K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">142479033</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-09-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5216</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TEIPEL GREGORY K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509770</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">HARKER PATRICIA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020693708K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">695051574</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-09-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H0473</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TEIPEL GREGORY K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509770</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">KALCSICS JANET P</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020708049K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">932902093</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-10-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5216</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TEIPEL GREGORY K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509770</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">BAILEY KEVIN</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020732566K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">677520433</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-10-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5216</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TEIPEL GREGORY K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509770</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MOORE RHONDA K</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020739885K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">493215413</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">4V07A53TY30</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-12-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H9070</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TEIPEL GREGORY K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509770</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MILLAM TERESA A</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020754446K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">552696154</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-10-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5216</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TEIPEL GREGORY K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509770</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MILLAM DANIEL L</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020879619K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">321196251</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-12-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5216</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TEIPEL GREGORY K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509770</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MOONEY BONNIE S</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020966759K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">479915034</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MER</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5619</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TEIPEL GREGORY K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509770</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SHULTZ LINDA Z</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00021141899K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">857752374</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-12-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5216</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">HOFFMANN JASON R</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1524629</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">COSTA DANIEL A</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020444605K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">312662013</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-06-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5216</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">HOFFMANN JASON R</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1524629</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">HAUGH CLAIRE C</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020570339K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">4902134</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">28.75</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-08-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5525</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RICHTER ADAM J</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1545980</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">KLAUZA ALICE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020568097K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">97669543</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MER</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-08-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H6622</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RICHTER ADAM J</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1545980</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">FERRELL CHARLOTTE A</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020571654K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">347960573</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-10-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5216</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RICHTER ADAM J</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1545980</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CHASE DONNA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020649688K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">329150164</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-09-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5216</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RICHTER ADAM J</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1545980</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">WILKE JUDY</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020695105K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">945416430</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MER</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-09-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H6622</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RICHTER ADAM J</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1545980</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TERESZCUK JOANNE M</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020992055K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">671009362</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-12-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5216</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">YALE RICHARD A A</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1573279</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CRUZATA OSCARINA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00013683255K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">86378242</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">8TE0VV8GX39</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">F</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MER</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0.17</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">51</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">FIRST YEAR COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCF</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H1036</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RICHTER PETER L</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1581320</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PRYCE DIANA V</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020589444K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">855447513</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MER</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-08-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H6622</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">INSKIPT DEBORAH L</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1673763</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SABOL JOSEPH R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020676577K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">731314054</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">28.75</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-09-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5525</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">INSKIPT DEBORAH L</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1673763</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MARKS ROSEMARY</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020709016K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">169103254</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">5G95H51PA40</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">28.75</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-10-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5525</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ABDUL SAADIA S</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1800759</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">VAN HORN KATHY S</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00022386017K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">682135344</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1QM1C60CT92</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">F</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0.17</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">51</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">FIRST YEAR COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCF</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5216</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SANTOS RICARDO D</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1800776</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SILVA NICOMEDES C</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00022406995K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">365638520</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1J07R91XM30</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-12-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DEC</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">F</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0.08</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">25.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">FIRST YEAR COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCF</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-12-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5216</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CARRYER KELLY S</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1904595</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">AUKSCUNAS ROBERT T</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00003208672K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">337182343</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">28.75</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-06-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5525</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CARRYER KELLY S</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1904595</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">AUKSCUNAS CYNTHIA J</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00003209148K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">976098373</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">28.75</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-06-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5525</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CARRYER KELLY S</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1904595</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LEA JUDITH K</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020407106K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">350247374</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">28.75</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-06-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5525</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CARRYER KELLY S</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1904595</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MOORE PATRICIA L</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00020431238K</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">71542534</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MA</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEP</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">28.75</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2023-08-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">H5525</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DEATON PAMELA S</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1509744</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Patton Andrew</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">9028352660</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CB</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-12-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DEC</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">F</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">60</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">VISION</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">26.88</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2.69</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">COMPBENEFITS FIRST YEAR COMMISSION</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CRCF</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-01-16T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LEE JOEL N</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1510085</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">WORLDWIDE SOURCING AND SO</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">000000853911</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GR</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">EM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DENTAL</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">474.86</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">47.49</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2022-01-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LEE JOEL N</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1510085</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">WORLDWIDE SOURCING AND SO</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">000000853911</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GR</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">EM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">60</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">VISION</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">50.98</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">5.0999999999999996</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RENEWAL COMMISSIONS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ARCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2022-01-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">HUNSBERGER ANTHONY J</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1510420</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Fields Rachel</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">9007471970</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CB</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-12-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DEC</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DENTAL</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">21.54</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2.15</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">COMPBENEFITS RENEWAL COMMISSION</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CRCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2011-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">HUNSBERGER ANTHONY J</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1510420</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Kisner Amy S</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">9007573590</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CB</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-12-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DEC</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DENTAL</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">21.54</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2.15</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">COMPBENEFITS RENEWAL COMMISSION</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CRCM</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2012-03-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">KUCAN THOMAS</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1581327</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">WOOTEN PATRICK</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00000892895A</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">F</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">4746.12</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">522.12</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MED SUPP ANNUALIZED STANDARD</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MSAS</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MAX RONALD J</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1775329</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LEWIS CHARLENE F</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">00000887634A</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NOV</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">F</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MEDICARE</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1472.04</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">323.88</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MED SUPP ANNUALIZED STANDARD</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MSAS</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1891456</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2024-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DUNAVANT MICHAEL</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1831491</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Green Patti</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">9029455080</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CB</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2025-01-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">JAN</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">F</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">R</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DENTAL</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">41.82</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">39.18</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">COMPBENEFITS FIRST YEAR COMMISSION</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CRCF</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="DateTime">2025-01-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String"></Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Selected/>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

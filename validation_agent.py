@@ -12,9 +12,14 @@ from googleapiclient.http import MediaIoBaseDownload
 from playwright.sync_api import sync_playwright
 from dotenv import load_dotenv
 import psutil
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # Load environment variables
 load_dotenv()
+
+# Thread-local storage for browser contexts
+thread_local = threading.local()
 
 # Configuration
 SCOPES = ['https://www.googleapis.com/auth/drive.readonly']
@@ -38,7 +43,6 @@ CHROME_USER_DATA_DIR = os.environ.get('CHROME_USER_DATA_DIR')
 HEADLESS = os.getenv('HEADLESS', 'False').lower() == 'true'
 
 # Carrier Name Aliases for Google Drive Folder Matching
-# Add any carrier abbreviations or alternate names here. Keys should be lowercase.
 CARRIER_ALIASES = {
     "independence blue cross": ["ibc", "independence"],
     "united healthcare": ["uhc", "unitedhealth", "united", "aarp", "uhone"],
@@ -73,10 +77,7 @@ class ValidationAgent:
     def __init__(self):
         self.drive_service = None
         self.cached_statements = {} # Dictionary keyed by carrier name
-        self.playwright = None
-        self.browser_context = None
-        self.page = None
-        self.is_logged_in = False
+        self.df_lock = threading.Lock()
         
     def _authenticate_drive(self):
         print("🔐 Authenticating Google Drive...")
@@ -117,7 +118,6 @@ class ValidationAgent:
                         raise e
                     print(f"      ⚠️ Network hiccup detected. Retrying API request ({attempt+1}/{max_retries})...")
                     time.sleep(2)
-            
             
             items = results.get('files', [])
             for item in items:
@@ -322,84 +322,87 @@ class ValidationAgent:
         return "No Match", "Not found in any statements"
 
     def start_browser(self):
-        if not self.playwright:
-            self.playwright = sync_playwright().start()
+        if not hasattr(thread_local, 'playwright') or not thread_local.playwright:
+            thread_local.playwright = sync_playwright().start()
             
-        if self.browser_context:
+        if hasattr(thread_local, 'browser_context') and thread_local.browser_context:
             try:
-                self.browser_context.close()
+                thread_local.browser_context.close()
             except:
                 pass
                 
-        self.browser_context = self.playwright.chromium.launch_persistent_context(
-            user_data_dir=CHROME_USER_DATA_DIR,
+        thread_id = threading.get_ident()
+        profile_dir = f"{CHROME_USER_DATA_DIR}_{thread_id}" if CHROME_USER_DATA_DIR else f"./temp_profile_{thread_id}"
+        
+        thread_local.browser_context = thread_local.playwright.chromium.launch_persistent_context(
+            user_data_dir=profile_dir,
             headless=HEADLESS,
             args=['--no-sandbox', '--disable-setuid-sandbox']
         )
         
-        if len(self.browser_context.pages) > 0:
-            self.page = self.browser_context.pages[0]
+        if len(thread_local.browser_context.pages) > 0:
+            thread_local.page = thread_local.browser_context.pages[0]
         else:
-            self.page = self.browser_context.new_page()
+            thread_local.page = thread_local.browser_context.new_page()
             
-        self.page.on("dialog", lambda dialog: dialog.accept())
-        self.is_logged_in = False
+        thread_local.page.on("dialog", lambda dialog: dialog.accept())
+        thread_local.is_logged_in = False
 
     def close_browser(self):
-        if self.browser_context:
+        if hasattr(thread_local, 'browser_context') and thread_local.browser_context:
             try:
-                self.browser_context.close()
+                thread_local.browser_context.close()
             except Exception:
                 pass
-            self.browser_context = None
+            thread_local.browser_context = None
             
-        if self.playwright:
+        if hasattr(thread_local, 'playwright') and thread_local.playwright:
             try:
-                self.playwright.stop()
+                thread_local.playwright.stop()
             except Exception:
                 pass
-            self.playwright = None
+            thread_local.playwright = None
             
-        self.is_logged_in = False
+        thread_local.is_logged_in = False
 
     def login_to_apl(self):
-        print("🌐 Logging into APL portal...")
-        self.page.goto("https://p20.aplplus.com/", timeout=60000)
+        print(f"[{threading.get_ident()}] 🌐 Logging into APL portal...")
+        thread_local.page.goto("https://p20.aplplus.com/", timeout=60000)
         
         # 1. Login Form (Using precise IDs from HTML)
-        if self.page.locator("#txtCompanyID").is_visible():
-            self.page.fill("#txtCompanyID", APL_COMPANY_ID or "")
-            self.page.press("#txtCompanyID", "Tab")
+        if thread_local.page.locator("#txtCompanyID").is_visible():
+            thread_local.page.fill("#txtCompanyID", APL_COMPANY_ID or "")
+            thread_local.page.press("#txtCompanyID", "Tab")
             
             try:
-                self.page.wait_for_load_state("networkidle", timeout=5000)
+                thread_local.page.wait_for_load_state("networkidle", timeout=5000)
             except:
                 pass
                 
             if APL_CARRIER:
                 try:
-                    self.page.locator(f"#ddDB option:has-text('{APL_CARRIER}')").wait_for(state="attached", timeout=5000)
+                    thread_local.page.locator(f"#ddDB option:has-text('{APL_CARRIER}')").wait_for(state="attached", timeout=5000)
                 except:
                     pass
-                self.page.select_option("#ddDB", label=APL_CARRIER)
+                thread_local.page.select_option("#ddDB", label=APL_CARRIER)
                 
-            self.page.fill("#txtUserID", APL_USER or "")
-            self.page.fill("#txtpwd", APL_PASS or "")
-            self.page.click("#iplogin")
+            thread_local.page.fill("#txtUserID", APL_USER or "")
+            thread_local.page.fill("#txtpwd", APL_PASS or "")
+            thread_local.page.click("#iplogin")
             
             try:
-                self.page.wait_for_load_state("networkidle", timeout=10000)
+                thread_local.page.wait_for_load_state("networkidle", timeout=10000)
             except:
                 pass
             
             # Handle "Password expires" custom modal
             try:
-                ok_btn = self.page.locator("button:has-text('Ok'), input[value='Ok'], button:has-text('OK'), input[value='OK']").first
+                ok_btn = thread_local.page.locator("button:has-text('Ok'), input[value='Ok'], button:has-text('OK'), input[value='OK']").first
                 ok_btn.wait_for(state="visible", timeout=5000)
                 if ok_btn.is_visible():
                     ok_btn.click()
                     try:
-                        self.page.wait_for_load_state("networkidle", timeout=5000)
+                        thread_local.page.wait_for_load_state("networkidle", timeout=5000)
                     except:
                         pass
             except:
@@ -407,38 +410,37 @@ class ValidationAgent:
                 
         # 2. Navigate to Policies Tab
         try:
-            self.page.get_by_text("Policies", exact=True).click(timeout=5000)
+            thread_local.page.get_by_text("Policies", exact=True).click(timeout=5000)
             try:
-                self.page.wait_for_load_state("networkidle", timeout=5000)
+                thread_local.page.wait_for_load_state("networkidle", timeout=5000)
             except:
                 pass
         except:
             pass # Already on it or different layout
             
-        self.is_logged_in = True
+        thread_local.is_logged_in = True
 
     def verify_apl_portal(self, policy_number, matched_rule, retry=True):
-        print(f"🌐 Verifying {policy_number} on APL portal...")
+        print(f"[{policy_number}] 🌐 Verifying on APL portal...")
         try:
-            if not self.browser_context or not self.is_logged_in:
+            if not hasattr(thread_local, 'browser_context') or not thread_local.browser_context or getattr(thread_local, 'is_logged_in', False) == False:
                 self.start_browser()
                 self.login_to_apl()
                 
             # 3. Search for policy
-            # Wait for the specific Quick Search input
-            search_input = self.page.locator("input[placeholder*='Search']").first
+            search_input = thread_local.page.locator("input[placeholder*='Search']").first
             search_input.wait_for(state="visible", timeout=10000)
             search_input.fill(str(policy_number))
             search_input.press("Enter")
             
             try:
-                self.page.wait_for_load_state("networkidle", timeout=10000)
+                thread_local.page.wait_for_load_state("networkidle", timeout=10000)
             except:
                 pass
-            self.page.wait_for_timeout(2000) # Give table time to populate
+            thread_local.page.wait_for_timeout(2000) # Give table time to populate
             
             # 4. Check for matches based on Matched Rule(s)
-            policy_rows = self.page.locator("table tbody tr")
+            policy_rows = thread_local.page.locator("table tbody tr")
             count = policy_rows.count()
             
             p_num = str(policy_number).strip()
@@ -463,11 +465,11 @@ class ValidationAgent:
             return "No Match", "Policy did not meet rule criteria in APL portal"
                 
         except Exception as e:
-            print(f"⚠️ Playwright automation failed for {policy_number}: {e}")
+            print(f"[{policy_number}] ⚠️ Playwright automation failed: {e}")
             if retry:
-                print("🔄 Portal stuck or errored. Destroying browser and retrying...")
+                print(f"[{policy_number}] 🔄 Portal stuck or errored. Destroying thread browser and retrying...")
                 try:
-                    self.page.screenshot(path=f"debug_screenshot_{policy_number}.png")
+                    thread_local.page.screenshot(path=f"debug_screenshot_{policy_number}.png")
                 except:
                     pass
                 self.close_browser()
@@ -505,16 +507,49 @@ class ValidationAgent:
                 
         wb.save(file_path)
 
+    def _validate_policy_worker(self, index, row, sheet_name):
+        # Worker function that processes a single row
+        policy_num = row.get('Processed Policy Number', row.get('Policy Number', ''))
+        
+        if pd.notna(policy_num):
+            policy_num_str = str(policy_num).strip()
+            if policy_num_str.endswith('.0'):
+                policy_num_str = policy_num_str[:-2]
+            policy_num = policy_num_str
+        
+        carrier_val = row.get('Carrier')
+        actual_carrier = carrier_val if pd.notna(carrier_val) else sheet_name
+        
+        print(f"[{policy_num}] 🔍 Validating Policy for carrier '{actual_carrier}'")
+        if USE_LOCAL_FILES or self.drive_service:
+            drive_match, drive_reason = self.validate_in_drive(policy_num, actual_carrier)
+        else:
+            drive_match, drive_reason = "No Match", "Google Drive API not authenticated (and local files disabled)"
+        
+        if drive_match == "Exact Match":
+            matched_rule_val = str(row.get('Matched Rule(s)', 'No Matching Rule')).strip()
+            apl_match, apl_reason = self.verify_apl_portal(policy_num, matched_rule_val)
+        else:
+            apl_match, apl_reason = "Skipped", "No Exact Match in Drive"
+            
+        return {
+            'index': index,
+            'sheet_name': sheet_name,
+            'Drive Match': drive_match,
+            'Reason': drive_reason,
+            'APL Website Match': apl_match,
+            'APL Match Reason': apl_reason
+        }
+
     def run(self):
         check_chrome_running()
         
-        print("🚀 Starting Validation Agent...")
+        print("🚀 Starting Validation Agent with ThreadPoolExecutor...")
         if USE_LOCAL_FILES:
             self.drive_service = None
         else:
             self.drive_service = self._authenticate_drive()
         
-        # 1. Load Input Data FIRST
         input_data = {}
         if os.path.exists(PROGRESS_FILE):
             print(f"📄 Resuming from checkpoint {PROGRESS_FILE}...")
@@ -526,7 +561,6 @@ class ValidationAgent:
             print(f"❌ Input file {INPUT_FILE} not found.")
             return
             
-        # 2. Extract Target Carriers
         target_carriers = set()
         for df in input_data.values():
             if 'Carrier' in df.columns:
@@ -540,7 +574,6 @@ class ValidationAgent:
         target_carriers = list(target_carriers)
         print(f"🎯 Found {len(target_carriers)} unique carrier(s) in Excel. ONLY scanning Drive for these...")
         
-        # 3. Cache ONLY the necessary folders
         if USE_LOCAL_FILES:
             print("⚡ Using LOCAL filesystem for statements.")
             self.cache_local_statements(target_carriers)
@@ -551,15 +584,13 @@ class ValidationAgent:
             else:
                 print("⚠️ Running without Google Drive validation...")
             
-        processed_data = {}
-        processed_count = 0
-        total_rows = sum(len(df) for df in input_data.values())
-        print(f"📊 Total records to process: {total_rows}")
+        processed_data = input_data.copy()
         
-        for sheet_name, df in input_data.items():
-            print(f"📝 Processing sheet: {sheet_name}")
-            
-            # Ensure new columns exist
+        total_rows = sum(len(df) for df in processed_data.values())
+        print(f"📊 Total records in sheet(s): {total_rows}")
+        
+        tasks = []
+        for sheet_name, df in processed_data.items():
             if 'Drive Match' not in df.columns:
                 df['Drive Match'] = ""
                 df['Reason'] = ""
@@ -567,57 +598,42 @@ class ValidationAgent:
                 df['APL Match Reason'] = ""
                 
             for index, row in df.iterrows():
-                # Skip already processed if resuming
                 if pd.notna(row.get('Drive Match')) and str(row.get('Drive Match')).strip() != "":
                     if str(row.get('APL Website Match')) != "Error":
-                        processed_count += 1
                         continue
-                    
-                # Assuming 'Processed Policy Number' is the column name
-                policy_num = row.get('Processed Policy Number', row.get('Policy Number', ''))
+                tasks.append((index, row, sheet_name))
                 
-                # Fix pandas .0 float formatting bug
-                if pd.notna(policy_num):
-                    policy_num_str = str(policy_num).strip()
-                    if policy_num_str.endswith('.0'):
-                        policy_num_str = policy_num_str[:-2]
-                    policy_num = policy_num_str
-                
-                carrier_val = row.get('Carrier')
-                actual_carrier = carrier_val if pd.notna(carrier_val) else sheet_name
-                
-                print(f"  🔍 Validating Policy: {policy_num} for carrier '{actual_carrier}'")
-                if USE_LOCAL_FILES or self.drive_service:
-                    drive_match, drive_reason = self.validate_in_drive(policy_num, actual_carrier)
-                else:
-                    drive_match, drive_reason = "No Match", "Google Drive API not authenticated (and local files disabled)"
-                
-                df.at[index, 'Drive Match'] = drive_match
-                df.at[index, 'Reason'] = drive_reason
-                
-                if drive_match == "Exact Match":
-                    matched_rule_val = str(row.get('Matched Rule(s)', 'No Matching Rule')).strip()
-                    apl_match, apl_reason = self.verify_apl_portal(policy_num, matched_rule_val)
-                    df.at[index, 'APL Website Match'] = apl_match
-                    df.at[index, 'APL Match Reason'] = apl_reason
-                else:
-                    df.at[index, 'APL Website Match'] = "Skipped"
-                    df.at[index, 'APL Match Reason'] = "No Exact Match in Drive"
-                    
-                processed_count += 1
-                
-                # Checkpoint saving
-                if processed_count % CHECKPOINT_INTERVAL == 0:
-                    print(f"💾 Saving checkpoint at {processed_count}/{total_rows} records...")
-                    with pd.ExcelWriter(PROGRESS_FILE, engine='openpyxl') as writer:
-                        for s_name, s_df in input_data.items():
-                            s_df.to_excel(writer, sheet_name=s_name, index=False)
-            
-            processed_data[sheet_name] = df
-            
-        print("✅ Processing complete. Saving final output...")
+        print(f"🔄 Records remaining to process: {len(tasks)}")
         
-        self.close_browser()
+        processed_count = total_rows - len(tasks)
+        
+        with ThreadPoolExecutor(max_workers=3) as executor:
+            future_to_task = {executor.submit(self._validate_policy_worker, t[0], t[1], t[2]): t for t in tasks}
+            
+            for future in as_completed(future_to_task):
+                try:
+                    result = future.result()
+                    
+                    with self.df_lock:
+                        s_name = result['sheet_name']
+                        idx = result['index']
+                        
+                        processed_data[s_name].at[idx, 'Drive Match'] = result['Drive Match']
+                        processed_data[s_name].at[idx, 'Reason'] = result['Reason']
+                        processed_data[s_name].at[idx, 'APL Website Match'] = result['APL Website Match']
+                        processed_data[s_name].at[idx, 'APL Match Reason'] = result['APL Match Reason']
+                        
+                        processed_count += 1
+                        
+                        if processed_count % CHECKPOINT_INTERVAL == 0:
+                            print(f"💾 Saving checkpoint at {processed_count}/{total_rows} records...")
+                            with pd.ExcelWriter(PROGRESS_FILE, engine='openpyxl') as writer:
+                                for s, df in processed_data.items():
+                                    df.to_excel(writer, sheet_name=s, index=False)
+                except Exception as exc:
+                    print(f"❌ A worker thread generated an exception: {exc}")
+        
+        print("✅ Processing complete. Saving final output...")
         
         with pd.ExcelWriter(OUTPUT_FILE, engine='openpyxl') as writer:
             for s_name, df in processed_data.items():
@@ -625,7 +641,6 @@ class ValidationAgent:
                 
         self.format_excel_output(OUTPUT_FILE)
         
-        # Remove checkpoint after successful completion
         if os.path.exists(PROGRESS_FILE):
             os.remove(PROGRESS_FILE)
             

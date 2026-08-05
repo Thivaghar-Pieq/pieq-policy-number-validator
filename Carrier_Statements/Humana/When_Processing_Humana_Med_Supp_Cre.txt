@@ -1,0 +1,1 @@
+When Processing Humana MED supp create new unique ID for the policies and old policies will be saved here for future processing. 

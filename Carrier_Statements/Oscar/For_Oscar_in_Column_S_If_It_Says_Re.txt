@@ -1,0 +1,2 @@
+For Oscar in column S if it says renewal make sure to use effective date 1 year back for example if effective date is 01/01/2024 then put as  01/01/2023 because it will give wrong rate for SL.
+Also, for Thomas pardue any effective date before 7/1/24 gets Street commissions so use ID 371819street. anything after gets lvl 4 commissions 

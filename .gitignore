@@ -12,7 +12,7 @@ token.json
 credentials.json
 
 # Chrome user data
-chrome_profile/
+chrome_profile*
 
 # Python cache
 __pycache__/
@@ -23,5 +23,3 @@ __pycache__/
 Verified_Policies_Progress.xlsx
 Recovered_Policies.xlsx
 Verified_Policies.xlsx
-
-Carrier_Statements/

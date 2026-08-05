@@ -1,0 +1,10 @@
+Policy Nbr,Issue State,Desc,Effective Date,Paid To Date,Mode,Day Paid,Agent Nbr,First Name,Last Name,Agency,Policy Form,Trans Type,Prem Paid Amt,Comm Prem Amt,Comm Rate,Comm Amt ,Code,Retained or Recovery,Comm Amt Due
+GTA6403550,PA,COLON DIANA  ,10-15-25,11-15-25,01,16,011I7208    ,CAROL               ,FOLEY               ,                                                  ,M20AS ,1,0,2.5, 70.00,1.75, ,0,1.75
+GTA6403550,PA,COLON DIANA  ,10-15-25,11-15-25,01,16,011I7208    ,CAROL               ,FOLEY               ,                                                  ,M20FE ,1,0,1.68, 70.00,1.18, ,0,1.18
+GTA6403550,PA,COLON DIANA  ,10-15-25,11-15-25,01,16,011I7208    ,CAROL               ,FOLEY               ,                                                  ,M20OS ,1,0,12.43, 70.00,8.7, ,0,8.7
+GTA6403550,PA,COLON DIANA  ,10-15-25,11-15-25,01,16,011I7208    ,CAROL               ,FOLEY               ,                                                  ,MAP20 ,1,44.71,28.1, 70.00,19.67, ,0,19.67
+GTA6404077,PA,KUDDAR KATHLE,10-15-25,11-15-25,01,16,011I7208    ,CAROL               ,FOLEY               ,                                                  ,M20CN ,1,0,20.53, 70.00,14.37, ,0,14.37
+GTA6404077,PA,KUDDAR KATHLE,10-15-25,11-15-25,01,16,011I7208    ,CAROL               ,FOLEY               ,                                                  ,M20FE ,1,0,1.68, 70.00,1.18, ,0,1.18
+GTA6404077,PA,KUDDAR KATHLE,10-15-25,11-15-25,01,16,011I7208    ,CAROL               ,FOLEY               ,                                                  ,M20SC ,1,0,3.1, 70.00,2.17, ,0,2.17
+GTA6404077,PA,KUDDAR KATHLE,10-15-25,11-15-25,01,16,011I7208    ,CAROL               ,FOLEY               ,                                                  ,M20SF ,1,0,14.36, 70.00,10.05, ,0,10.05
+GTA6404077,PA,KUDDAR KATHLE,10-15-25,11-15-25,01,16,011I7208    ,CAROL               ,FOLEY               ,                                                  ,MAP20 ,1,61.78,22.11, 70.00,15.48, ,0,15.48

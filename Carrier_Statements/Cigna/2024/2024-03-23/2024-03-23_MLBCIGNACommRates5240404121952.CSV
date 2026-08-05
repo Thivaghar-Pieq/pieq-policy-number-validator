@@ -1,0 +1,5 @@
+"Product ID","Product Description","Level","Contract","Adv. Mon","From Mon","To Mon","Rate (%)","Rate ($)","Fixed"
+"5","Cigna Dental","5",'LVL5,"1.0","1.0","0.0","8.4000%","$0.00","N"
+"5","Cigna Dental","9",'Agency,"1.0","1.0","0.0","10.0000%","$0.00","N"
+"5","Cigna Dental","10",'Sales Leader,"1.0","1.0","12.0","0.7000%","$0.00","Y"
+"5","Cigna Dental","10",'Sales Leader,"1.0","13.0","0.0","0.3000%","$0.00","Y"
