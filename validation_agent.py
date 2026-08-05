@@ -25,6 +25,10 @@ OUTPUT_FILE = 'Verified_Policies.xlsx'
 PROGRESS_FILE = 'Verified_Policies_Progress.xlsx'
 CHECKPOINT_INTERVAL = 500
 
+# Local Filesystem Search Configuration
+USE_LOCAL_FILES = True
+LOCAL_STATEMENTS_DIR = 'Carrier_Statements'
+
 # APL Portal Credentials
 APL_COMPANY_ID = os.environ.get('APL_COMPANY_ID')
 APL_CARRIER = os.environ.get('APL_CARRIER')
@@ -36,10 +40,26 @@ HEADLESS = os.getenv('HEADLESS', 'False').lower() == 'true'
 # Carrier Name Aliases for Google Drive Folder Matching
 # Add any carrier abbreviations or alternate names here. Keys should be lowercase.
 CARRIER_ALIASES = {
-    "independence blue cross": ["ibc"],
-    "united healthcare": ["uhc", "unitedhealth"],
-    "blue cross blue shield": ["bcbs"],
-    "health care service corp": ["hcsc"]
+    "independence blue cross": ["ibc", "independence"],
+    "united healthcare": ["uhc", "unitedhealth", "united", "aarp", "uhone"],
+    "blue cross blue shield": ["bcbs", "blue cross", "blue shield"],
+    "health care service corp": ["hcsc"],
+    "capital blue cross": ["cbc", "capital", "capital blue cross"],
+    "highmark": ["highmark"],
+    "medical mutual": ["medical mutual", "medmutual", "mmo"],
+    "ameritas": ["ameritas"],
+    "allstate": ["allstate", "all state"],
+    "aetna": ["aetna"],
+    "cigna": ["cigna"],
+    "ambetter": ["ambetter", "celtic", "sunflower"],
+    "elevance": ["elevance", "anthem"],
+    "anthem": ["anthem", "elevance"],
+    "kaiser": ["kaiser", "kp"],
+    "molina": ["molina"],
+    "oscar": ["oscar"],
+    "transamerica": ["transamerica"],
+    "mutual of omaha": ["moo", "mutual of omaha", "omaha"],
+    "wellcare": ["wellcare"]
 }
 
 def check_chrome_running():
@@ -210,6 +230,54 @@ class ValidationAgent:
                 except Exception as e:
                     print(f"      ❌ Failed to cache {name}: {e}")
 
+    def cache_local_statements(self, target_carriers=None):
+        print(f"📁 Locating local '{LOCAL_STATEMENTS_DIR}' folder...")
+        
+        if not os.path.exists(LOCAL_STATEMENTS_DIR):
+            print(f"❌ Folder '{LOCAL_STATEMENTS_DIR}' not found in the current directory.")
+            return
+            
+        print(f"✅ Found local folder '{LOCAL_STATEMENTS_DIR}'. Locating carrier subfolders...")
+        
+        # Get all top-level carrier subfolders
+        subfolders = [f for f in os.scandir(LOCAL_STATEMENTS_DIR) if f.is_dir()]
+        print(f"📁 Found {len(subfolders)} top-level carrier subfolders.")
+        
+        for subfolder in subfolders:
+            sub_name = subfolder.name.lower()
+            
+            # OPTIMIZATION: Only process folders that match our target carriers
+            if target_carriers:
+                sub_name_clean = sub_name.replace("_", " ")
+                is_target = any(tc in sub_name_clean or sub_name_clean in tc for tc in target_carriers)
+                if not is_target:
+                    continue
+                    
+            self.cached_statements[sub_name] = []
+            
+            print(f"   🔍 Recursively scanning folder: {subfolder.name}")
+            
+            for root, _, files in os.walk(subfolder.path):
+                for name in files:
+                    name_lower = name.lower()
+                    
+                    if ".csv" in name_lower or "recovered policies" in name_lower or "policy list combined" in name_lower:
+                        print(f"      ⏩ Skipping excluded file: {name}")
+                        continue
+                        
+                    if not (name_lower.endswith('.xlsx') or name_lower.endswith('.xlsb')):
+                        continue
+                        
+                    file_path = os.path.join(root, name)
+                    try:
+                        df_dict = pd.read_excel(file_path, sheet_name=None)
+                        for sheet_name, df in df_dict.items():
+                            text_dump = df.to_csv(index=False).lower()
+                            self.cached_statements[sub_name].append((name, sheet_name, text_dump))
+                        print(f"      - Cached: {name}")
+                    except Exception as e:
+                        print(f"      ❌ Failed to cache {name}: {e}")
+
     def _local_search(self, policy_number, carrier_name):
         policy_lower = str(policy_number).lower()
         carrier_lower = str(carrier_name).lower()
@@ -349,7 +417,7 @@ class ValidationAgent:
             
         self.is_logged_in = True
 
-    def verify_apl_portal(self, policy_number, retry=True):
+    def verify_apl_portal(self, policy_number, matched_rule, retry=True):
         print(f"🌐 Verifying {policy_number} on APL portal...")
         try:
             if not self.browser_context or not self.is_logged_in:
@@ -369,18 +437,30 @@ class ValidationAgent:
                 pass
             self.page.wait_for_timeout(2000) # Give table time to populate
             
-            # 4. Check for EXACT match in the first column of the table
+            # 4. Check for matches based on Matched Rule(s)
             policy_rows = self.page.locator("table tbody tr")
             count = policy_rows.count()
+            
+            p_num = str(policy_number).strip()
+            rule = str(matched_rule).strip()
+            
             for i in range(count):
                 row = policy_rows.nth(i)
                 first_cell = row.locator("td").nth(0)
                 if first_cell.is_visible():
                     cell_text = first_cell.inner_text().strip()
-                    if cell_text == str(policy_number):
-                        return "APL Match", "Found exact match in APL portal"
+                    
+                    is_exact = (cell_text == p_num)
+                    is_fuzzy = (len(cell_text) in [len(p_num) + 1, len(p_num) + 2]) and (cell_text.startswith(p_num) or cell_text.endswith(p_num))
+                    
+                    if rule == "No Matching Rule":
+                        if is_exact:
+                            return "APL Match", "Perfect Match: Exact match on APL portal"
+                    else:
+                        if is_fuzzy:
+                            return "APL Match", "Perfect Match: APL portal has 1-2 extra characters"
             
-            return "No Match", "Policy not found in APL portal"
+            return "No Match", "Policy did not meet rule criteria in APL portal"
                 
         except Exception as e:
             print(f"⚠️ Playwright automation failed for {policy_number}: {e}")
@@ -391,7 +471,7 @@ class ValidationAgent:
                 except:
                     pass
                 self.close_browser()
-                return self.verify_apl_portal(policy_number, retry=False)
+                return self.verify_apl_portal(policy_number, matched_rule, retry=False)
             return "Error", f"Automation failed: {str(e)}"
 
     def format_excel_output(self, file_path):
@@ -429,7 +509,10 @@ class ValidationAgent:
         check_chrome_running()
         
         print("🚀 Starting Validation Agent...")
-        self.drive_service = self._authenticate_drive()
+        if USE_LOCAL_FILES:
+            self.drive_service = None
+        else:
+            self.drive_service = self._authenticate_drive()
         
         # 1. Load Input Data FIRST
         input_data = {}
@@ -458,10 +541,15 @@ class ValidationAgent:
         print(f"🎯 Found {len(target_carriers)} unique carrier(s) in Excel. ONLY scanning Drive for these...")
         
         # 3. Cache ONLY the necessary folders
-        if self.drive_service:
-            self.cache_carrier_statements(target_carriers)
+        if USE_LOCAL_FILES:
+            print("⚡ Using LOCAL filesystem for statements.")
+            self.cache_local_statements(target_carriers)
         else:
-            print("⚠️ Running without Google Drive validation...")
+            print("☁️ Using GOOGLE DRIVE for statements.")
+            if self.drive_service:
+                self.cache_carrier_statements(target_carriers)
+            else:
+                print("⚠️ Running without Google Drive validation...")
             
         processed_data = {}
         processed_count = 0
@@ -499,16 +587,17 @@ class ValidationAgent:
                 actual_carrier = carrier_val if pd.notna(carrier_val) else sheet_name
                 
                 print(f"  🔍 Validating Policy: {policy_num} for carrier '{actual_carrier}'")
-                if self.drive_service:
+                if USE_LOCAL_FILES or self.drive_service:
                     drive_match, drive_reason = self.validate_in_drive(policy_num, actual_carrier)
                 else:
-                    drive_match, drive_reason = "No Match", "Google Drive API not authenticated"
+                    drive_match, drive_reason = "No Match", "Google Drive API not authenticated (and local files disabled)"
                 
                 df.at[index, 'Drive Match'] = drive_match
                 df.at[index, 'Reason'] = drive_reason
                 
                 if drive_match == "Exact Match":
-                    apl_match, apl_reason = self.verify_apl_portal(policy_num)
+                    matched_rule_val = str(row.get('Matched Rule(s)', 'No Matching Rule')).strip()
+                    apl_match, apl_reason = self.verify_apl_portal(policy_num, matched_rule_val)
                     df.at[index, 'APL Website Match'] = apl_match
                     df.at[index, 'APL Match Reason'] = apl_reason
                 else:
