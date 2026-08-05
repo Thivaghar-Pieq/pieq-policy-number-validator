@@ -1,0 +1,25 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Credentials and sensitive data
+token.json
+credentials.json
+
+# Chrome user data
+chrome_profile/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary excel progress files
+Verified_Policies_Progress.xlsx
+Recovered_Policies.xlsx
+Verified_Policies.xlsx
